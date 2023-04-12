@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  root "pages#home"
-  get "modal", to: "pages#modal"
+  root "characters#index"
+
+  namespace :characters do
+    get ":id/details", to: "details#show", as: "details"
+  end
 end

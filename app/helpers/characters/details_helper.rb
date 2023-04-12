@@ -1,0 +1,2 @@
+module Characters::DetailsHelper
+end
